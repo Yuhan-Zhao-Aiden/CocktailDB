@@ -6,3 +6,9 @@
 ul {
     list-style-type: none;
 }
+
+footer {
+    position: absolute;
+    margin-bottom: 0;
+    width: 100%;
+}
