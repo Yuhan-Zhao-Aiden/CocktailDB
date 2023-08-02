@@ -1,0 +1,27 @@
+<%- include("header.ejs") %>
+
+<div class="container mt-5">
+
+    <h1><%= title %></h1>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <% content.forEach((element) => { %>
+            <div class="col-md-3">
+                <a href=<%= "/drink/" + element.idDrink %>>
+
+                    <div class="card mt-3" style="width: 18rem;">
+                        <img src=<%= element.strDrinkThumb %> class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text"><%= element.strDrink %></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        <% }) %>
+        
+    </div>
+</div>
+
+<%- include("footer.ejs") %>
